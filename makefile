@@ -20,9 +20,9 @@ DEPEXT      := d
 OBJEXT      := o
 
 #Flags, Libraries and Includes
-CFLAGS      := -c -Wall -O3 -g -std=c++14
-LIB         := -lOpenCL
-INC         := -I$(INCDIR) -I/usr/local/include
+CFLAGS      := -c -Wall -O3 -g -std=c++14 $$(pkg-config --cflags --libs gtkmm-3.0)
+LIB         := -lOpenCL $$(pkg-config --cflags --libs gtkmm-3.0)
+INC         := -I$(INCDIR) -I/usr/local/include 
 INCDEP      := -I$(INCDIR)
 
 #---------------------------------------------------------------------------------

@@ -1,10 +1,14 @@
 #include <iostream>
 
 #include <CL/cl.hpp>
+
+#include "ui.hpp"
 #include "main.hpp"
+
+
 int test(int r);
 void noTest(int k);
-int main() {
+int main(int argc, char *argv[]) {
 	std::cout << "OpenCL Test - Setting Git" << std::endl;
 
 	// Get all Platforms
@@ -69,6 +73,13 @@ int main() {
 		std::cout << C[i] << " ";
 	}
 	std::cout << std::endl;
-	return 0;
+
+
+
+	// Show window
+	auto app = Gtk::Application::create(argc, argv, "org.ai.ai");
+
+	Ui ui;
+	return app->run(ui);
 }
 
