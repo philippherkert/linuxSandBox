@@ -27,3 +27,7 @@
 *.exe
 *.out
 *.app
+
+# Local Change
+# Remove *.d files which result due to makefile
+*.d
