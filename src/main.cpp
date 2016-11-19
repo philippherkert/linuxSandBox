@@ -5,7 +5,7 @@
 int test(int r);
 void noTest(int k);
 int main() {
-	std::cout << "OpenCL Test!" << std::endl;
+	std::cout << "OpenCL Test" << std::endl;
 
 	// Get all Platforms
 	std::vector<cl::Platform> all_platforms;
