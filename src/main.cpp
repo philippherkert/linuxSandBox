@@ -6,9 +6,25 @@
 #include "main.hpp"
 
 
+#include "easylogging++.h"
+
+// This initializes the logger. This is only 
+// done once for all files
+INITIALIZE_EASYLOGGINGPP
+
 int test(int r);
 void noTest(int k);
 int main(int argc, char *argv[]) {
+
+	el::Configurations conf("logger.conf");
+	// Reconfigure single logger
+	//el::Loggers::reconfigureLogger("default", conf);
+	// Reconfigure all loggers
+	el::Loggers::reconfigureAllLoggers(conf);
+
+	START_EASYLOGGINGPP(argc, argv);
+
+	LOG(INFO) << "Logger Test";
 	std::cout << "OpenCL Test - Setting Git" << std::endl;
 
 	// Get all Platforms

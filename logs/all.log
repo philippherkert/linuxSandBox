@@ -1,0 +1,9 @@
+2016-11-21 23:43:39,191926 Logger Test
+2016-11-21 23:47:47,257402 src/main.cpp int main(int, char**) 25: Logger Test
+2016-11-21 23:50:28,742907 [src/main.cpp] [int main(int, char**)] 25: \nLogger Test
+2016-11-21 23:54:28,439869 [src/main.cpp] [int main(int, char**)] 25: %nLogger Test
+2016-11-21 23:56:13,913998 [src/main.cpp] [int main(int, char**)] 25: %\nLogger Test
+2016-11-21 23:58:00,171209 [src/main.cpp] [int main(int, char**)] 25: Logger Test
+2016-11-22 00:04:02,175061 INFO  140183907178944 [src/main.cpp] [int main(int, char**)] 25: Logger Test
+2016-11-22 00:11:35,636420 INFO  140380046100928 [src/main.cpp] [int main(int, char**)] 27: Logger Test
+00:15:03.524 INFO : Logger Test
