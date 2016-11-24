@@ -102,7 +102,12 @@ int main(int argc, char *argv[]) {
 	// el::base::PerformanceTracker track_1;
 	 TIMED_SCOPE(track_1, "track");
 	PERFORMANCE_CHECKPOINT(track_1);
-	queue.enqueueNDRangeKernel(simple_add, cl::NullRange, cl::NDRange(array_size), cl::NullRange);
+	int number_of_runs = 50;
+	for(int i = 0; i < number_of_runs; i++)
+	{
+		queue.enqueueNDRangeKernel(simple_add, cl::NullRange, cl::NDRange(array_size), cl::NullRange);
+
+	}
 
 	// simple_add.setArg(0, buffer_C);
 	// queue.enqueueNDRangeKernel(simple_add, cl::NullRange, cl::NDRange(10), cl::NullRange);
