@@ -1,8 +1,10 @@
 #include <iostream>
 
+#include <boost/thread/thread.hpp>
 #include <CL/cl.hpp>
 
 #include "ui.hpp"
+#include "multi_thread.hpp"
 #include "main.hpp"
 
 
@@ -23,6 +25,10 @@ int main(int argc, char *argv[]) {
 	el::Loggers::reconfigureAllLoggers(conf);
 
 	START_EASYLOGGINGPP(argc, argv);
+
+	MT* mt = new MTD();
+	mt->test1();
+	delete mt;
 
 	LOG(INFO) << "Logger Test";
 	std::cout << "OpenCL Test - Setting Git" << std::endl;
@@ -62,40 +68,64 @@ int main(int argc, char *argv[]) {
 		std::cout << "Error building: " << program.getBuildInfo<CL_PROGRAM_BUILD_LOG>(default_device) << "\n";
 		exit(1);
 	}
-	cl::Buffer buffer_A(context, CL_MEM_READ_WRITE, sizeof(int)*10);
-	cl::Buffer buffer_B(context, CL_MEM_READ_WRITE, sizeof(int)*10);
-	cl::Buffer buffer_C(context, CL_MEM_READ_WRITE, sizeof(int)*10);
 
-	int A[] = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9};
-	int B[] = {0, 1, 2, 0, 1, 2, 0, 1, 2, 0};
+	// Size of array
+	int array_size = 1000*1000*100;
+
+	cl::Buffer buffer_A(context, CL_MEM_READ_WRITE, sizeof(int)*array_size);
+	cl::Buffer buffer_B(context, CL_MEM_READ_WRITE, sizeof(int)*array_size);
+	cl::Buffer buffer_C(context, CL_MEM_READ_WRITE, sizeof(int)*array_size);
+
+	int* A = new int[array_size];
+	int* B = new int[array_size];
+	for(int i = 0; i < array_size; i++)
+	{
+		A[i] = i;
+		B[i] = i % 5;
+	}
+	//int A[] = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9};
+	//int B[] = {0, 1, 2, 0, 1, 2, 0, 1, 2, 0};
 
 	cl::CommandQueue queue(context, default_device);
 
-	queue.enqueueWriteBuffer(buffer_A, CL_TRUE, 0, sizeof(int)*10, A);
-	queue.enqueueWriteBuffer(buffer_B, CL_TRUE, 0, sizeof(int)*10, B);
+	queue.enqueueWriteBuffer(buffer_A, CL_TRUE, 0, sizeof(int)*array_size, A);
+	queue.enqueueWriteBuffer(buffer_B, CL_TRUE, 0, sizeof(int)*array_size, B);
+
+	delete[] A;
+	delete[] B;
 
 	cl::Kernel simple_add(program, "simple_add");
 	simple_add.setArg(0, buffer_A);
 	simple_add.setArg(1, buffer_B);
 	simple_add.setArg(2, buffer_C);
-	queue.enqueueNDRangeKernel(simple_add, cl::NullRange, cl::NDRange(10), cl::NullRange);
 
-	int C[10];
+	// el::base::PerformanceTracker track_1;
+	 TIMED_SCOPE(track_1, "track");
+	PERFORMANCE_CHECKPOINT(track_1);
+	queue.enqueueNDRangeKernel(simple_add, cl::NullRange, cl::NDRange(array_size), cl::NullRange);
 
-	queue.enqueueReadBuffer(buffer_C, CL_TRUE, 0, sizeof(int)*10, C);
-
-	std::cout << "Result: \n";
-	for(int i = 0; i < 10; i++) {
-		std::cout << C[i] << " ";
-	}
-	std::cout << std::endl;
+	// simple_add.setArg(0, buffer_C);
+	// queue.enqueueNDRangeKernel(simple_add, cl::NullRange, cl::NDRange(10), cl::NullRange);
 
 
+	int* C = new int[array_size];
+
+	queue.enqueueReadBuffer(buffer_C, CL_TRUE, 0, sizeof(int)*array_size, C);
+	PERFORMANCE_CHECKPOINT(track_1);
+
+	// std::cout << "Result: \n";
+	// for(int i = 0; i < 10; i++) {
+	//   std::cout << C[i] << " ";
+	// }
+	// std::cout << std::endl;
+
+	delete[] C;
 
 	// Show window
-	auto app = Gtk::Application::create(argc, argv, "org.ai.ai");
-
-	Ui ui;
-	return app->run(ui);
+	// auto app = Gtk::Application::create(argc, argv, "org.ai.ai");
+//
+	// Ui ui;
+	// return app->run(ui);
+	return 0;
 }
 

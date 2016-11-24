@@ -7,3 +7,153 @@
 2016-11-22 00:04:02,175061 INFO  140183907178944 [src/main.cpp] [int main(int, char**)] 25: Logger Test
 2016-11-22 00:11:35,636420 INFO  140380046100928 [src/main.cpp] [int main(int, char**)] 27: Logger Test
 00:15:03.524 INFO : Logger Test
+18:57:57.601 INFO : Logger Test
+19:57:14.978 INFO : Logger Test
+21:03:27.513 INFO : Logger Test
+21:21:56.761 INFO : Logger Test
+21:22:51.426 INFO : Logger Test
+21:31:32.118 INFO : Logger Test
+21:34:09.293 INFO : Logger Test
+21:35:59.280 INFO : MTD invoked.
+21:35:59.280 INFO : Logger Test
+21:58:23.839 INFO : MTD invoked.
+21:58:23.839 INFO : Logger Test
+22:03:27.056 INFO : Logger Test
+22:04:28.969 INFO : MTD invoked.
+22:04:28.970 INFO : Logger Test
+23:45:45.241 INFO : MTD invoked.
+23:45:45.241 INFO : Logger Test
+02:30:07.803 INFO : MTD invoked.
+02:30:07.807 INFO : Logger Test
+02:30:12.354 INFO : Executed [track] in [4.162 seconds]
+02:32:01.329 INFO : MTD invoked.
+02:32:01.329 INFO : Logger Test
+02:32:01.563 INFO : Performance checkpoint for block [track] : [0 ms]
+02:32:03.054 INFO : Executed [track] in [1.491 seconds]
+02:33:22.496 INFO : MTD invoked.
+02:33:22.496 INFO : Logger Test
+02:33:22.603 INFO : Performance checkpoint for block [track] : [0 ms]
+02:33:22.606 INFO : Performance checkpoint for block [track] : [2 ms ([0 ms] from last checkpoint)]
+02:33:22.660 INFO : Executed [track] in [57 ms]
+02:35:08.179 INFO : MTD invoked.
+02:35:08.179 INFO : Logger Test
+02:35:08.296 INFO : Performance checkpoint for block [track] : [0 ms]
+02:35:08.301 INFO : Performance checkpoint for block [track] : [4 ms ([0 ms] from last checkpoint)]
+02:35:08.301 INFO : Executed [track] in [4 ms]
+02:39:11.498 INFO : MTD invoked.
+02:39:11.498 INFO : Logger Test
+02:39:34.936 INFO : MTD invoked.
+02:39:34.936 INFO : Logger Test
+02:46:13.231 INFO : MTD invoked.
+02:46:13.231 INFO : Logger Test
+02:46:16.870 INFO : MTD invoked.
+02:46:16.870 INFO : Logger Test
+02:47:01.653 INFO : MTD invoked.
+02:47:01.653 INFO : Logger Test
+02:47:08.063 INFO : MTD invoked.
+02:47:08.063 INFO : Logger Test
+02:47:52.415 INFO : MTD invoked.
+02:47:52.415 INFO : Logger Test
+02:47:52.560 INFO : Performance checkpoint for block [track] : [0 ms]
+02:47:52.568 INFO : Performance checkpoint for block [track] : [7 ms ([3 ms] from last checkpoint)]
+02:47:52.568 INFO : Executed [track] in [7 ms]
+02:48:03.035 INFO : MTD invoked.
+02:48:03.035 INFO : Logger Test
+02:48:03.153 INFO : Performance checkpoint for block [track] : [0 ms]
+02:48:03.162 INFO : Performance checkpoint for block [track] : [8 ms ([4 ms] from last checkpoint)]
+02:48:03.162 INFO : Executed [track] in [8 ms]
+02:48:05.437 INFO : MTD invoked.
+02:48:05.437 INFO : Logger Test
+02:48:05.556 INFO : Performance checkpoint for block [track] : [0 ms]
+02:48:05.561 INFO : Performance checkpoint for block [track] : [5 ms ([0 ms] from last checkpoint)]
+02:48:05.561 INFO : Executed [track] in [5 ms]
+02:48:08.661 INFO : MTD invoked.
+02:48:08.662 INFO : Logger Test
+02:48:08.776 INFO : Performance checkpoint for block [track] : [0 ms]
+02:48:08.781 INFO : Performance checkpoint for block [track] : [5 ms ([0 ms] from last checkpoint)]
+02:48:08.781 INFO : Executed [track] in [5 ms]
+02:48:10.577 INFO : MTD invoked.
+02:48:10.578 INFO : Logger Test
+02:48:10.699 INFO : Performance checkpoint for block [track] : [0 ms]
+02:48:10.705 INFO : Performance checkpoint for block [track] : [5 ms ([0 ms] from last checkpoint)]
+02:48:10.705 INFO : Executed [track] in [5 ms]
+02:49:30.238 INFO : MTD invoked.
+02:49:30.238 INFO : Logger Test
+02:49:30.363 INFO : Performance checkpoint for block [track] : [0 ms]
+02:49:30.368 INFO : Performance checkpoint for block [track] : [5 ms ([0 ms] from last checkpoint)]
+02:49:30.368 INFO : Executed [track] in [5 ms]
+02:49:33.868 INFO : MTD invoked.
+02:49:33.868 INFO : Logger Test
+02:49:33.982 INFO : Performance checkpoint for block [track] : [0 ms]
+02:49:33.988 INFO : Performance checkpoint for block [track] : [5 ms ([0 ms] from last checkpoint)]
+02:49:33.988 INFO : Executed [track] in [5 ms]
+02:49:35.621 INFO : MTD invoked.
+02:49:35.621 INFO : Logger Test
+02:49:35.739 INFO : Performance checkpoint for block [track] : [0 ms]
+02:49:35.744 INFO : Performance checkpoint for block [track] : [5 ms ([0 ms] from last checkpoint)]
+02:49:35.744 INFO : Executed [track] in [5 ms]
+02:50:07.331 INFO : MTD invoked.
+02:50:07.331 INFO : Logger Test
+02:50:07.472 INFO : Performance checkpoint for block [track] : [0 ms]
+02:50:07.479 INFO : Performance checkpoint for block [track] : [6 ms ([0 ms] from last checkpoint)]
+02:50:07.479 INFO : Executed [track] in [6 ms]
+02:53:10.734 INFO : MTD invoked.
+02:53:10.734 INFO : Logger Test
+02:53:10.956 INFO : Performance checkpoint for block [track] : [0 ms]
+02:53:11.058 INFO : Performance checkpoint for block [track] : [101 ms ([88 ms] from last checkpoint)]
+02:53:11.066 INFO : Executed [track] in [109 ms]
+02:53:13.661 INFO : MTD invoked.
+02:53:13.661 INFO : Logger Test
+02:53:13.873 INFO : Performance checkpoint for block [track] : [0 ms]
+02:53:13.962 INFO : Performance checkpoint for block [track] : [88 ms ([84 ms] from last checkpoint)]
+02:53:13.969 INFO : Executed [track] in [96 ms]
+02:53:15.347 INFO : MTD invoked.
+02:53:15.347 INFO : Logger Test
+02:53:15.573 INFO : Performance checkpoint for block [track] : [0 ms]
+02:53:15.664 INFO : Performance checkpoint for block [track] : [90 ms ([77 ms] from last checkpoint)]
+02:53:15.670 INFO : Executed [track] in [96 ms]
+02:53:17.634 INFO : MTD invoked.
+02:53:17.634 INFO : Logger Test
+02:53:17.848 INFO : Performance checkpoint for block [track] : [0 ms]
+02:53:17.948 INFO : Performance checkpoint for block [track] : [100 ms ([93 ms] from last checkpoint)]
+02:53:17.956 INFO : Executed [track] in [108 ms]
+02:53:19.144 INFO : MTD invoked.
+02:53:19.144 INFO : Logger Test
+02:53:19.360 INFO : Performance checkpoint for block [track] : [0 ms]
+02:53:19.477 INFO : Performance checkpoint for block [track] : [117 ms ([112 ms] from last checkpoint)]
+02:53:19.483 INFO : Executed [track] in [123 ms]
+02:53:20.507 INFO : MTD invoked.
+02:53:20.508 INFO : Logger Test
+02:53:20.723 INFO : Performance checkpoint for block [track] : [0 ms]
+02:53:20.814 INFO : Performance checkpoint for block [track] : [91 ms ([77 ms] from last checkpoint)]
+02:53:20.820 INFO : Executed [track] in [96 ms]
+02:54:08.628 INFO : MTD invoked.
+02:54:08.628 INFO : Logger Test
+02:54:09.036 INFO : Performance checkpoint for block [track] : [0 ms]
+02:54:09.603 INFO : Performance checkpoint for block [track] : [566 ms ([562 ms] from last checkpoint)]
+02:54:09.631 INFO : Executed [track] in [594 ms]
+02:54:23.095 INFO : MTD invoked.
+02:54:23.095 INFO : Logger Test
+02:54:23.524 INFO : Performance checkpoint for block [track] : [0 ms]
+02:54:24.021 INFO : Performance checkpoint for block [track] : [497 ms ([494 ms] from last checkpoint)]
+02:54:24.048 INFO : Executed [track] in [523 ms]
+02:54:31.908 INFO : MTD invoked.
+02:54:31.908 INFO : Logger Test
+02:54:32.348 INFO : Performance checkpoint for block [track] : [0 ms]
+02:54:32.870 INFO : Performance checkpoint for block [track] : [521 ms ([518 ms] from last checkpoint)]
+02:54:32.897 INFO : Executed [track] in [549 ms]
+03:03:09.737 INFO : MTD invoked.
+03:03:09.738 INFO : Logger Test
+03:03:10.179 INFO : Performance checkpoint for block [track] : [0 ms]
+03:03:10.691 INFO : Performance checkpoint for block [track] : [511 ms ([506 ms] from last checkpoint)]
+03:03:10.717 INFO : Executed [track] in [537 ms]
+03:13:20.684 INFO : MTD invoked.
+03:13:20.684 INFO : Logger Test
+03:13:21.248 INFO : Performance checkpoint for block [track] : [0 ms]
+03:13:21.802 INFO : Performance checkpoint for block [track] : [554 ms ([548 ms] from last checkpoint)]
+03:13:21.836 INFO : Executed [track] in [588 ms]
+03:13:26.014 INFO : MTD invoked.
+03:13:26.015 INFO : Logger Test
+03:13:26.513 INFO : Performance checkpoint for block [track] : [0 ms]
+03:13:27.110 INFO : Performance checkpoint for block [track] : [596 ms ([592 ms] from last checkpoint)]
+03:13:27.142 INFO : Executed [track] in [628 ms]
