@@ -177,3 +177,125 @@
 03:54:43.157 INFO : Performance checkpoint for block [track] : [0 ms]
 03:54:48.960 INFO : Performance checkpoint for block [track] : [5.803 seconds ([5.796 seconds] from last checkpoint)]
 03:54:48.987 INFO : Executed [track] in [5.829 seconds]
+04:30:13.516 INFO : MTD invoked.
+04:30:13.517 INFO : Logger Test
+04:30:18.044 INFO : Performance checkpoint for block [track] : [0 ms]
+04:30:24.409 INFO : Performance checkpoint for block [track] : [6.365 seconds ([6.36 seconds] from last checkpoint)]
+04:30:24.413 INFO : Executed [track] in [6.369 seconds]
+05:11:15.683 INFO : MTD invoked.
+05:11:15.683 INFO : Logger Test
+05:11:19.504 INFO : Performance checkpoint for block [track] : [0 ms]
+05:11:25.296 INFO : Performance checkpoint for block [track] : [5.791 seconds ([5.786 seconds] from last checkpoint)]
+05:11:25.299 INFO : Executed [track] in [5.795 seconds]
+05:11:44.818 INFO : MTD invoked.
+05:11:44.818 INFO : Logger Test
+05:11:45.363 INFO : Performance checkpoint for block [track] : [0 ms]
+05:11:51.145 INFO : Performance checkpoint for block [track] : [5.782 seconds ([5.781 seconds] from last checkpoint)]
+05:11:51.146 INFO : Executed [track] in [5.783 seconds]
+18:34:58.680 INFO : MTD invoked.
+18:34:58.680 INFO : Logger Test
+18:34:58.685 INFO : Run Method Started!
+18:34:58.818 INFO : Performance checkpoint for block [track] : [0 ms]
+18:34:58.897 INFO : Performance checkpoint for block [track] : [79 ms ([78 ms] from last checkpoint)]
+18:34:58.897 INFO : Executed [track] in [79 ms]
+18:35:44.147 INFO : MTD invoked.
+18:35:44.147 INFO : Logger Test
+18:35:44.148 INFO : Run Method Started!
+18:35:44.297 INFO : Performance checkpoint for block [track] : [0 ms]
+18:35:44.374 INFO : Performance checkpoint for block [track] : [76 ms ([76 ms] from last checkpoint)]
+18:35:44.374 INFO : Executed [track] in [76 ms]
+18:37:09.236 INFO : MTD invoked.
+18:37:09.236 INFO : Logger Test
+18:37:09.236 INFO : Run Method Started!
+18:37:09.351 INFO : Performance checkpoint for block [track] : [0 ms]
+18:37:09.428 INFO : Performance checkpoint for block [track] : [77 ms ([76 ms] from last checkpoint)]
+18:37:21.462 INFO : Executed [track] in [12.111 seconds]
+20:02:21.340 INFO : MTD invoked.
+20:02:21.343 INFO : Logger Test
+20:02:21.343 INFO : Run Method Started!
+20:02:21.756 INFO : Performance checkpoint for block [track] : [0 ms]
+20:02:21.834 INFO : Performance checkpoint for block [track] : [77 ms ([77 ms] from last checkpoint)]
+20:02:21.834 INFO : Executed [track] in [77 ms]
+20:04:14.467 INFO : MTD invoked.
+20:04:14.473 INFO : Logger Test
+20:04:14.474 INFO : Run Method Started!
+20:04:14.896 INFO : Performance checkpoint for block [track] : [0 ms]
+20:04:14.990 INFO : Performance checkpoint for block [track] : [93 ms ([93 ms] from last checkpoint)]
+20:04:14.992 INFO : Executed [track] in [95 ms]
+20:04:52.910 INFO : MTD invoked.
+20:04:52.910 INFO : Logger Test
+20:04:52.910 INFO : Run Method Started!
+20:04:53.054 INFO : Performance checkpoint for block [track] : [0 ms]
+20:04:53.206 INFO : Performance checkpoint for block [track] : [151 ms ([151 ms] from last checkpoint)]
+20:05:04.192 INFO : Executed [track] in [11.137 seconds]
+20:05:11.292 INFO : MTD invoked.
+20:05:11.293 INFO : Logger Test
+20:05:11.293 INFO : Run Method Started!
+20:05:11.432 INFO : Performance checkpoint for block [track] : [0 ms]
+20:05:11.511 INFO : Performance checkpoint for block [track] : [79 ms ([79 ms] from last checkpoint)]
+20:05:17.384 INFO : Executed [track] in [5.951 seconds]
+20:48:05.618 INFO : MTD invoked.
+20:48:05.619 INFO : Run Method Started!
+20:48:05.619 INFO : Test of Conf, val a.val1 = 3
+20:48:05.619 INFO : Logger Test
+20:48:05.752 INFO : Performance checkpoint for block [track] : [0 ms]
+20:48:05.831 INFO : Performance checkpoint for block [track] : [79 ms ([79 ms] from last checkpoint)]
+20:48:13.972 INFO : Executed [track] in [8.22 seconds]
+20:51:21.672 INFO : MTD invoked.
+20:51:21.672 INFO : Run Method Started!
+20:51:21.672 INFO : Test of Conf, val a.val1 = 3
+20:51:21.672 INFO : Logger Test
+20:51:21.808 INFO : Performance checkpoint for block [track] : [0 ms]
+20:51:21.940 INFO : Performance checkpoint for block [track] : [131 ms ([131 ms] from last checkpoint)]
+20:51:23.708 INFO : Executed [track] in [1.9 seconds]
+20:51:35.063 INFO : MTD invoked.
+20:51:35.063 INFO : Run Method Started!
+20:51:35.063 INFO : Test of Conf, val a.val1 = 3
+20:51:35.063 INFO : Logger Test
+20:51:35.186 INFO : Performance checkpoint for block [track] : [0 ms]
+20:51:35.315 INFO : Performance checkpoint for block [track] : [128 ms ([128 ms] from last checkpoint)]
+20:51:37.653 INFO : Executed [track] in [2.466 seconds]
+00:37:58.322 INFO : MTD invoked.
+00:37:58.322 INFO : Run Method Started!
+00:37:58.323 INFO : Test of Conf, val a.val1 = 3
+00:37:58.323 INFO : Logger Test
+00:37:58.465 INFO : Performance checkpoint for block [track] : [0 ms]
+00:37:58.555 INFO : Performance checkpoint for block [track] : [90 ms ([87 ms] from last checkpoint)]
+00:38:00.896 INFO : Executed [track] in [2.43 seconds]
+06:17:15.543 INFO : MTD invoked.
+06:17:15.544 INFO : Run Method Started!
+06:17:15.544 INFO : Test of Conf, val a.val1 = 3
+06:17:15.544 INFO : Logger Test
+06:17:15.927 INFO : Performance checkpoint for block [track] : [0 ms]
+06:17:16.035 INFO : Performance checkpoint for block [track] : [108 ms ([108 ms] from last checkpoint)]
+06:17:18.782 INFO : Executed [track] in [2.855 seconds]
+06:22:56.645 INFO : MTD invoked.
+06:22:56.645 INFO : Run Method Started!
+06:22:56.645 INFO : Test of Conf, val a.val1 = 3
+06:22:56.645 INFO : Logger Test
+06:22:56.750 INFO : Performance checkpoint for block [track] : [0 ms]
+06:22:56.830 INFO : Performance checkpoint for block [track] : [80 ms ([78 ms] from last checkpoint)]
+06:22:58.497 INFO : Executed [track] in [1.747 seconds]
+06:23:15.914 INFO : MTD invoked.
+06:23:15.915 INFO : Run Method Started!
+06:23:15.915 INFO : Test of Conf, val a.val1 = 3
+06:23:15.915 INFO : Logger Test
+06:23:16.067 INFO : Performance checkpoint for block [track] : [0 ms]
+06:23:16.158 INFO : Performance checkpoint for block [track] : [91 ms ([91 ms] from last checkpoint)]
+06:23:45.820 INFO : Executed [track] in [29.753 seconds]
+06:25:32.707 INFO : MTD invoked.
+06:25:32.707 INFO : Run Method Started!
+06:25:32.708 INFO : Loading Ai.
+06:25:32.708 INFO : Test of Conf, val a.val1 = 3
+06:25:32.708 INFO : Logger Test
+06:25:32.884 INFO : Performance checkpoint for block [track] : [0 ms]
+06:25:33.030 INFO : Performance checkpoint for block [track] : [146 ms ([136 ms] from last checkpoint)]
+06:25:38.010 INFO : Executed [track] in [5.125 seconds]
+00:53:37.286 INFO : MTD invoked.
+00:53:37.286 INFO : Run Method Started!
+00:53:37.286 INFO : Loading Ai.
+00:53:37.286 INFO : Test of Conf, val a.val1 = 3
+00:53:37.286 INFO : Logger Test
+00:53:37.438 INFO : Performance checkpoint for block [track] : [0 ms]
+00:53:37.545 INFO : Performance checkpoint for block [track] : [106 ms ([101 ms] from last checkpoint)]
+00:54:00.222 INFO : Executed [track] in [22.784 seconds]

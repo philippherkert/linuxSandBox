@@ -1,12 +1,17 @@
 #include <iostream>
 
 #include <boost/thread/thread.hpp>
+#include <thread>
 #include <CL/cl.hpp>
 
 #include "ui.hpp"
 #include "multi_thread.hpp"
 #include "main.hpp"
-
+#include "controller/controller.hpp"
+#include "controller/action/close_action.hpp"
+#include "controller/action/load_action.hpp"
+#include <boost/property_tree/ptree.hpp>
+#include <boost/property_tree/ini_parser.hpp>
 
 #include "easylogging++.h"
 
@@ -17,6 +22,8 @@ INITIALIZE_EASYLOGGINGPP
 int test(int r);
 void noTest(int k);
 int main(int argc, char *argv[]) {
+
+	using boost::property_tree::ptree;
 
 	el::Configurations conf("logger.conf");
 	// Reconfigure single logger
@@ -29,6 +36,21 @@ int main(int argc, char *argv[]) {
 	MT* mt = new MTD();
 	mt->test1();
 	delete mt;
+
+	Controller* controller = new Controller();
+	std::thread controller_thread;
+	controller_thread = std::thread(&Controller::run, controller);
+
+	controller->action_push(new Load_Action());
+
+	ptree pt;
+	pt.put("a.val1", 3);
+	pt.put("a.val2", 2.523f);
+	pt.put("b.val3", "Hello");
+
+	write_ini("res/test.conf", pt);
+
+	LOG(INFO) << "Test of Conf, val a.val1 = " << pt.get<int>("a.val1");
 
 	LOG(INFO) << "Logger Test";
 	std::cout << "OpenCL Test - Setting Git" << std::endl;
@@ -70,7 +92,7 @@ int main(int argc, char *argv[]) {
 	}
 
 	// Size of array
-	int array_size = 1000*1000*100;
+	int array_size = 1000*1000*1;
 
 	cl::Buffer buffer_A(context, CL_MEM_READ_WRITE, sizeof(int)*array_size);
 	cl::Buffer buffer_B(context, CL_MEM_READ_WRITE, sizeof(int)*array_size);
@@ -126,11 +148,14 @@ int main(int argc, char *argv[]) {
 
 	delete[] C;
 
+	controller->action_push(new Close_Action());
+	controller_thread.join();
+
 	// Show window
-	// auto app = Gtk::Application::create(argc, argv, "org.ai.ai");
-//
-	// Ui ui;
-	// return app->run(ui);
-	return 0;
+	auto app = Gtk::Application::create(argc, argv, "org.ai.ai");
+
+	Ui ui;
+	return app->run(ui);
+	// return 0;
 }
 

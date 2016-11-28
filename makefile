@@ -21,7 +21,7 @@ OBJEXT      := o
 
 #Flags, Libraries and Includes
 CFLAGS      := -c -Wall -O3 -g -std=c++14 $$(pkg-config --cflags --libs gtkmm-3.0) -DELPP_NO_DEFAULT_LOG_FILE -DELPP_THREAD_SAFE
-LIB         := -lOpenCL -pthread -lboost_system $$(pkg-config --cflags --libs gtkmm-3.0)
+LIB         := -lOpenCL -pthread -lboost_system -lboost_thread $$(pkg-config --cflags --libs gtkmm-3.0)
 INC         := -I$(INCDIR) -I/usr/local/include 
 INCDEP      := -I$(INCDIR)
 
