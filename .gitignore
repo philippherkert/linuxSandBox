@@ -31,3 +31,5 @@
 # Local Change
 # Remove *.d files which result due to makefile
 *.d
+# Remove *.swp files which are vim swap files
+*.swp
