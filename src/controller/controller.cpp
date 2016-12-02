@@ -15,6 +15,10 @@ Controller::~Controller()
 {
 	delete queue;
 	delete current_state;
+	if(device != NULL) 
+	{
+		delete device;
+	}
 }
 
 void
