@@ -299,3 +299,86 @@
 00:53:37.438 INFO : Performance checkpoint for block [track] : [0 ms]
 00:53:37.545 INFO : Performance checkpoint for block [track] : [106 ms ([101 ms] from last checkpoint)]
 00:54:00.222 INFO : Executed [track] in [22.784 seconds]
+13:01:09.419 INFO : MTD invoked.
+13:01:09.419 INFO : Run Method Started!
+13:01:09.419 INFO : Loading Ai.
+13:01:09.420 INFO : Test of Conf, val a.val1 = 3
+13:01:09.420 INFO : Logger Test
+13:01:09.837 INFO : Performance checkpoint for block [track] : [0 ms]
+13:01:09.973 INFO : Performance checkpoint for block [track] : [136 ms ([136 ms] from last checkpoint)]
+13:01:17.594 INFO : Executed [track] in [7.757 seconds]
+13:23:19.863 INFO : MTD invoked.
+13:23:19.864 INFO : Test of Conf, val a.val1 = 3
+13:23:19.864 INFO : Logger Test
+13:23:19.876 INFO : Run Method Started!
+13:23:19.876 INFO : Loading Ai.
+13:23:19.876 INFO : Queue wird erstellt
+13:23:19.876 INFO : Using platform: Intel(R) OpenCL
+
+13:23:19.876 INFO : Using device: Intel(R) Core(TM) M-5Y71 CPU @ 1.20GHz
+
+13:23:20.019 INFO : Performance checkpoint for block [track] : [0 ms]
+13:23:20.115 INFO : Performance checkpoint for block [track] : [96 ms ([95 ms] from last checkpoint)]
+13:23:25.765 INFO : Executed [track] in [5.745 seconds]
+13:35:31.755 INFO : MTD invoked.
+13:35:31.756 INFO : Run Method Started!
+13:35:31.756 INFO : Loading Ai.
+13:35:31.756 INFO : Queue wird erstellt
+13:35:31.756 INFO : Test of Conf, val a.val1 = 3
+13:35:31.756 INFO : Logger Test
+13:35:31.759 INFO : Using platform: Intel(R) OpenCL
+
+13:35:31.759 INFO : Using device: Intel(R) Core(TM) M-5Y71 CPU @ 1.20GHz
+
+13:35:31.941 INFO : Performance checkpoint for block [track] : [0 ms]
+13:35:32.099 INFO : Performance checkpoint for block [track] : [157 ms ([149 ms] from last checkpoint)]
+13:36:09.798 INFO : Executed [track] in [37.856 seconds]
+2016-12-02 21:47:50,451 INFO  139915419139712 [src/multi_thread.cpp] [virtual void MTD::test1()] 39: MTD invoked.
+2016-12-02 21:47:50,451 INFO  139915188320000 [src/controller/controller.cpp] [void Controller::run()] 23: Run Method Started!
+2016-12-02 21:47:50,451 INFO  139915188320000 [src/controller/action/load_action.cpp] [virtual void Load_Action::visit(State*)] 19: Loading Ai.
+2016-12-02 21:47:50,451 INFO  139915188320000 [src/controller/device.cpp] [void Device::init()] 26: Queue wird erstellt
+2016-12-02 21:47:50,462 INFO  139915188320000 [src/controller/device.cpp] [void Device::init()] 32: Debug Test 0
+2016-12-02 21:47:50,462 INFO  139915188320000 [src/controller/device.cpp] [cl::Device* Device::get_device(cl::Platform*)] 99: Debug Test a
+2016-12-02 21:47:50,462 INFO  139915188320000 [src/controller/device.cpp] [cl::Device* Device::get_device(cl::Platform*)] 107: Debug Test b
+2016-12-02 21:47:50,462 INFO  139915188320000 [src/controller/device.cpp] [cl::Device* Device::get_device(cl::Platform*)] 108: Using device: Intel(R) Core(TM) M-5Y71 CPU @ 1.20GHz
+
+2016-12-02 21:47:50,462 INFO  139915188320000 [src/controller/device.cpp] [void Device::init()] 37: Debug Test
+2016-12-02 21:47:50,462 INFO  139915188320000 [src/controller/device.cpp] [void Device::init()] 41: Debug Test 2
+2016-12-02 21:47:50,462 INFO  139915188320000 [src/controller/device.cpp] [void Device::init()] 52: Error building: 
+
+2016-12-02 22:00:09,797 INFO  139943129529984 [src/multi_thread.cpp] [virtual void MTD::test1()] 39: MTD invoked.
+2016-12-02 22:00:09,797 INFO  139942898710272 [src/controller/controller.cpp] [void Controller::run()] 23: Run Method Started!
+2016-12-02 22:00:09,797 INFO  139942898710272 [src/controller/action/load_action.cpp] [virtual void Load_Action::visit(State*)] 19: Loading Ai.
+2016-12-02 22:00:09,797 INFO  139942898710272 [src/controller/device.cpp] [void Device::init()] 26: Queue wird erstellt
+2016-12-02 22:00:09,804 INFO  139942898710272 [src/controller/device.cpp] [cl::Platform Device::get_platform()] 86: Using platform: Intel(R) OpenCL
+
+2016-12-02 22:00:09,804 INFO  139942898710272 [src/controller/device.cpp] [void Device::init()] 32: Debug Test 0
+2016-12-02 22:00:09,804 INFO  139942898710272 [src/controller/device.cpp] [cl::Device* Device::get_device(cl::Platform*)] 100: Debug Test a
+2016-12-02 22:00:09,804 INFO  139942898710272 [src/controller/device.cpp] [cl::Device* Device::get_device(cl::Platform*)] 108: Debug Test b
+2016-12-02 22:00:09,804 INFO  139942898710272 [src/controller/device.cpp] [cl::Device* Device::get_device(cl::Platform*)] 109: Using device: Intel(R) Core(TM) M-5Y71 CPU @ 1.20GHz
+
+2016-12-02 22:00:09,804 INFO  139942898710272 [src/controller/device.cpp] [void Device::init()] 37: Debug Test
+2016-12-02 22:00:09,804 INFO  139942898710272 [src/controller/device.cpp] [void Device::init()] 41: Debug Test 2
+2016-12-02 22:00:09,804 INFO  139942898710272 [src/controller/device.cpp] [void Device::init()] 52: Error building: 
+
+2016-12-02 22:04:35,677 INFO  140083818352256 [src/multi_thread.cpp] [virtual void MTD::test1()] 39: MTD invoked.
+2016-12-02 22:04:35,678 INFO  140083587532544 [src/controller/controller.cpp] [void Controller::run()] 23: Run Method Started!
+2016-12-02 22:04:35,678 INFO  140083587532544 [src/controller/action/load_action.cpp] [virtual void Load_Action::visit(State*)] 19: Loading Ai.
+2016-12-02 22:04:35,678 INFO  140083587532544 [src/controller/device.cpp] [void Device::init()] 26: Queue wird erstellt
+2016-12-02 22:04:35,683 INFO  140083587532544 [src/controller/device.cpp] [cl::Platform Device::get_platform()] 86: Using platform: Intel(R) OpenCL
+
+2016-12-02 22:04:35,683 INFO  140083587532544 [src/controller/device.cpp] [void Device::init()] 32: Debug Test 0
+2016-12-02 22:04:35,683 INFO  140083587532544 [src/controller/device.cpp] [cl::Device Device::get_device(cl::Platform)] 100: Debug Test a
+2016-12-02 22:04:35,683 INFO  140083587532544 [src/controller/device.cpp] [cl::Device Device::get_device(cl::Platform)] 108: Debug Test b
+2016-12-02 22:04:35,684 INFO  140083587532544 [src/controller/device.cpp] [cl::Device Device::get_device(cl::Platform)] 109: Using device: Intel(R) Core(TM) M-5Y71 CPU @ 1.20GHz
+
+2016-12-02 22:04:35,684 INFO  140083587532544 [src/controller/device.cpp] [void Device::init()] 37: Debug Test
+2016-12-02 22:04:35,778 INFO  140083587532544 [src/controller/device.cpp] [void Device::init()] 41: Debug Test 2
+22:17:02.643 INFO : MTD invoked.
+22:17:02.643 INFO : Run Method Started!
+22:17:02.643 INFO : Loading Ai.
+22:17:02.643 INFO : Queue wird erstellt
+22:17:02.646 INFO : Using platform: Intel(R) OpenCL
+
+22:17:02.646 INFO : Using device: Intel(R) Core(TM) M-5Y71 CPU @ 1.20GHz
+
